@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {Fabian} from './Componente/Fabian.js';
+import {Menu} from './Menu/Menu.js';
+import {Banner} from './Banner/Banner.js';
+import { Sinopsis } from './Sinopsis/Sinopsis.js';
+import { Footer } from './Footer/Footer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <Menu/>
+   <Fabian/>
+   <Banner/>
+   <Sinopsis/>
+   <Footer/>
+   
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
