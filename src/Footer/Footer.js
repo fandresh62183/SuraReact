@@ -2,19 +2,33 @@ export function Footer(){
 
     return(
         <>
-        <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
+<footer className="container-fluid bg-dark text-white p-3 mt-5 text-center ">
+
+<div className="row">
+
+    <div className="col-12 col-md-12 text-info">
+        <h4>&copy; Fabian Henao</h4>
+        <h4>Medellín</h4>
+        <h4>Aprendíz SURA</h4>
+        <h4>2022</h4>
+    </div>
+    <div className="row text-center justify-content-center">
+    <div className="col-12 col-md-1 border p-1">
+        <i className="bi bi-github fs-1 my-2"></i>
+    </div>
+
+    <div className="col-12 col-md-1 border p-1  ">
+        <i className="bi bi-linkedin text-info fs-1 my-2 "></i>
+    </div>
+    <div className="col-12 col-md-1 border p-1">
+    <i className="bi bi-whatsapp text-success fs-1 my-2"></i>
+    </div>    
 </div>
+</div>
+</footer>
+
         </>
     )
+
 }
