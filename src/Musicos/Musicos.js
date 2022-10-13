@@ -50,8 +50,9 @@ export function Musicos() {
     ]
     // mapeando un arreglo para hacer rendir
     return (
-        <div className="row row-cols-1 row-cols-md-4 g-3">
-            {
+        <div className="row row-cols-1 row-cols-md-3 g-3">
+           
+             {
                 musicos.map(function (musico) {
                     return (
                         <>
@@ -61,6 +62,23 @@ export function Musicos() {
                                         className="img-fluid w-200 h-200" alt="foto" />
                                     <h1 className="text-center">{musico.nombre}</h1>
                                     <h1 className="text-center">{musico.rol}</h1>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })
+            }
+             {
+                conciertosMemorables.map(function (concierto) {
+                    return (
+                        <>
+                            <div className="col mx-auto">
+                                <div className="card h-100 ">
+                                    <img src={concierto.Foto}
+                                        className="img-fluid w-200 h-200" alt="foto" />
+                                    <h1 className="text-center">{concierto.Pais}</h1>
+                                    <h1 className="text-center">{concierto.Fecha}</h1>
+                                    <h1 className="text-center">{concierto.Descripción}</h1>
                                 </div>
                             </div>
                         </>
